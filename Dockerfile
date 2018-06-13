@@ -1,5 +1,7 @@
 FROM alpine:3.7
 
+USER www-data:www-data
+
 RUN apk update && apk add openjdk8-jre
 
 # Setup SOLR 4.9.1
